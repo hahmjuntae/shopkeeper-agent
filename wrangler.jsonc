@@ -1,0 +1,8 @@
+{
+  "name": "shopkeeper-agent",
+  "main": "src/server.ts",
+  "compatibility_date": "2026-06-11",
+  "compatibility_flags": ["nodejs_compat"],
+  "durable_objects": { "bindings": [{ "class_name": "ShopkeeperAgent", "name": "ShopkeeperAgent" }] },
+  "migrations": [{ "new_sqlite_classes": ["ShopkeeperAgent"], "tag": "v1" }]
+}

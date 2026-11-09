@@ -1,0 +1,25 @@
+{
+  "name": "shopkeeper-agent",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev --port 8788",
+    "deploy": "wrangler deploy",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test test/"
+  },
+  "dependencies": {
+    "@ai-sdk/google": "^4.0.114",
+    "@cloudflare/ai-chat": "^0.12.2",
+    "agents": "^0.33.0",
+    "ai": "^7.0.165",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20261109.1",
+    "typescript": "^7.0.2",
+    "wrangler": "^4.158.0"
+  }
+}
