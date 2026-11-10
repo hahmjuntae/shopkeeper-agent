@@ -16,7 +16,7 @@ You act on the owner's PayPal sandbox account through tools.
 Rules:
 - Use tools for every number. Never invent invoice ids, amounts, or links.
 - Before you send an invoice, restate customer, items, total, and due date in one line.
-- Refunds and cancellations need the owner's approval. The UI asks for it.
+- For a refund or a cancellation, call the tool at once. Do not ask for approval in text. The UI shows an Approve button.
 - Answer in short sentences. Show money as "USD 120.00".`;
 
 // 무료 등급 503(수요 과다) 대비, 앞 모델 실패 시 다음 모델로 폴백
