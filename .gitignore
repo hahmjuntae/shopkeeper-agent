@@ -2,3 +2,5 @@ node_modules
 .dev.vars
 .wrangler
 public/app.js
+video/frames/
+video/out/

@@ -1,0 +1,13 @@
+[
+ {"frames": ["slides/s1.png"], "text": "Shopkeeper is a billing assistant for one-person businesses. You type one sentence. Shopkeeper does the PayPal work."},
+ {"frames": ["slides/s2.png"], "text": "A tutor or a freelance designer gets paid for many small jobs. Each job needs an invoice, a due date, and often a reminder. Many owners skip the reminder. Then the money comes late."},
+ {"frames": ["invoice/001.png"], "text": "This is the live demo on the PayPal sandbox. I ask for an invoice for two hours of tutoring at 45 dollars per hour, due Friday."},
+ {"frames": ["invoice/002.png", "invoice/100.png", "invoice/121.png"], "text": "The agent calls the PayPal Invoicing API. It creates the invoice and sends it. The invoice number and the total come from PayPal, not from the model."},
+ {"frames": ["unpaid/001.png", "unpaid/021.png"], "text": "Next, I ask which invoices are still unpaid. Shopkeeper shows a table with the total, the due date, and the status."},
+ {"frames": ["remind/001.png", "remind/003.png"], "text": "I ask for a friendly reminder. Shopkeeper finds the invoice and sends a PayPal reminder."},
+ {"frames": ["link/001.png", "link/LAST"], "text": "Shopkeeper also makes checkout links. One sentence gives a PayPal checkout link for a sticker pack.", "say": "Shopkeeper also makes checkout links. One sentence gives a PayPal checkout link for a nine fifty sticker pack."},
+ {"frames": ["cancel/001.png", "cancel/002.png", "cancel/007.png"], "text": "Some actions close a bill or move money back. When I ask to cancel an invoice, the agent stops and shows an approval card."},
+ {"frames": ["cancel/009.png", "cancel/010.png", "cancel/011.png"], "text": "After I click Approve, the agent cancels the invoice in PayPal. Refunds use the same approval step."},
+ {"frames": ["slides/s3.png"], "text": "Each browser gets its own agent on a Cloudflare Durable Object. Gemini picks the PayPal tools through the Vercel AI SDK. If one model is busy, the agent tries the next model."},
+ {"frames": ["slides/s4.png"], "text": "Shopkeeper is open source under the MIT license. Try the live demo, and read the code on GitHub."}
+]

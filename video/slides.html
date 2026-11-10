@@ -1,0 +1,29 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+*{box-sizing:border-box;margin:0}
+body{width:1440px;height:810px;font-family:-apple-system,"Helvetica Neue",Arial,sans-serif;background:#f6f7f9;color:#14171c;display:flex;align-items:center;justify-content:center}
+.s{display:none;width:1200px}.s.on{display:block}
+h1{font-size:84px;letter-spacing:-2px}h2{font-size:52px;letter-spacing:-1px;margin-bottom:36px}
+p.lead{font-size:34px;color:#4a5260;margin-top:22px;line-height:1.35}
+.tag{display:inline-block;font-size:22px;color:#1d4ed8;background:#e6edfb;border-radius:999px;padding:8px 18px;margin-bottom:28px}
+ul{list-style:none;padding:0}li{font-size:32px;line-height:1.4;padding:14px 0;border-bottom:1px solid #e3e6eb}
+li b{color:#1d4ed8}
+.arch{display:grid;grid-template-columns:1fr 60px 1.3fr 60px 1fr;align-items:center;gap:0}
+.box{background:#fff;border:2px solid #d8dde5;border-radius:18px;padding:26px;font-size:26px;line-height:1.4}
+.box h3{font-size:30px;margin-bottom:8px}.ar{text-align:center;font-size:40px;color:#8a93a3}
+.note{margin-top:34px;font-size:26px;color:#4a5260}
+.links p{font-size:34px;margin-top:18px}
+</style></head><body>
+<section class="s" id="s1"><span class="tag">PayPal AI Hackathon</span><h1>Shopkeeper</h1><p class="lead">A billing assistant for one-person businesses.<br>Type one sentence. Shopkeeper does the PayPal work.</p></section>
+<section class="s" id="s2"><h2>Small jobs, many forms</h2><ul>
+<li>A tutor or a freelance designer gets paid for <b>many small jobs</b>.</li>
+<li>Each job needs an <b>invoice</b>, a <b>due date</b>, and often a <b>reminder</b>.</li>
+<li>In the dashboard, one invoice takes many screens and form fields.</li>
+<li>Owners skip the reminder. The money comes late.</li></ul></section>
+<section class="s" id="s3"><h2>How it works</h2><div class="arch">
+<div class="box"><h3>Browser</h3>React chat<br>Approval cards</div><div class="ar">→</div>
+<div class="box"><h3>ShopkeeperAgent</h3>Cloudflare Durable Object<br>Gemini + AI SDK tools<br>Model fallback list</div><div class="ar">→</div>
+<div class="box"><h3>PayPal REST</h3>Invoicing v2<br>Orders v2<br>Payments v2</div></div>
+<p class="note">Cancel and refund tools have <b>needsApproval</b>. The model cannot run them without a human click.</p></section>
+<section class="s links" id="s4"><h1>Shopkeeper</h1><p>Live demo: shopkeeper-agent.graphite-site.workers.dev</p><p>Code (MIT): github.com/hahmjuntae/shopkeeper-agent</p><p class="lead">PayPal sandbox. No real money.</p></section>
+<script>document.getElementById(location.hash.slice(1)||"s1").classList.add("on")</script>
+</body></html>
