@@ -46,6 +46,7 @@ Approval steps make an agent safe enough for money. A short tool list with clear
 - A weekly digest of unpaid invoices.
 - Recurring invoices for monthly clients.
 - Log in with PayPal, so each owner uses their own account. Today one deployment serves one owner.
+- Test the buyer path end to end. I did not test the steps after a buyer pays: order capture and refund.
 
 ## Built with
 
